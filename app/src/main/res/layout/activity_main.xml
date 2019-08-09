@@ -8,19 +8,28 @@
         tools:context=".MainActivity">
 
     <TextView
-            android:text="TextView"
-            android:layout_width="303dp"
-            android:layout_height="54dp"
+            android:text="Header"
+            android:layout_width="213dp"
+            android:layout_height="314dp"
             android:id="@+id/Header01" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp" app:layout_constraintStart_toStartOf="parent"
-            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent"/>
-    <ScrollView
-            android:layout_width="363dp"
-            android:layout_height="315dp" tools:layout_editor_absoluteY="70dp" tools:layout_editor_absoluteX="45dp"
-            android:id="@+id/Log">
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
-                      android:orientation="vertical"/>
-    </ScrollView>
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/body1"
+            android:scrollbarAlwaysDrawHorizontalTrack="true" android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbarStyle="outsideInset" android:cursorVisible="true"
+            android:autoText="true" android:scrollHorizontally="true" android:scrollbarSize="20pt"
+            style="@android:style/Widget.Material.Light.TextView" android:textIsSelectable="true"
+            android:layout_marginTop="365dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" app:layout_constraintHorizontal_bias="0.497"
+            android:clickable="true" android:editable="true" android:fadeScrollbars="true" android:focusable="auto"
+            android:focusableInTouchMode="true" android:keepScreenOn="true" android:isScrollContainer="false"
+            android:overScrollMode="always" android:requiresFadingEdge="vertical"
+            android:scrollbars="vertical|none"/>
+    <TextView
+            android:text="TextView"
+            android:layout_width="183dp"
+            android:layout_height="181dp"
+            tools:layout_editor_absoluteX="108dp" android:id="@+id/body1" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
